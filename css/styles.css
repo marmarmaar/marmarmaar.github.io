@@ -1,3 +1,10 @@
 img {
- width: 100%;
+ max-width: 100%;
 }
+
+   .block {
+    background: #B08874; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 1em; /* Поля вокруг содержимого */
+    margin-bottom: 1rem; /* Расстояние снизу */
+   }
