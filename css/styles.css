@@ -1,3 +1,20 @@
+.MyFace {
+	border: 6px solid #666;
+	border-radius: 4px;
+	max-width: 200px;
+	/*background: #e8cfa9;*/
+}
+
+.fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    /*font-style: italic;  Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    /*color: #666;  Цвет подрисуночной подписи */
+ font-size: 2rem;
+   }
+
 div, section {
     display: block;
 }
