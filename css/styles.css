@@ -1,10 +1,148 @@
-img {
- max-width: 100%;
+div, section {
+    display: block;
 }
 
-   .block {
-    background: #B08874; /* Цвет фона */
-    color: #fff; /* Цвет текста */
-    padding: 1em; /* Поля вокруг содержимого */
-    margin-bottom: 1rem; /* Расстояние снизу */
-   }
+html {
+    font-size: 100%;
+    background: #fff;
+}
+
+body {
+    font-size: 16px; /*на всякий случай если браузер не поддерживает rem*/
+    font-size: 1rem;
+    line-height: 1.5; /*межстрочный интервал*/
+    background: #fff;  /*белый*/
+    color: #42425a;  /*серый*/
+    font-family: Inter,X-LocaleSpecific,sans-serif; /*Браузер выберет из списка первый шрифт, который установлен или может быть скачан используя правило @font-face*/
+    line-height: 1.5;
+}
+
+.all {
+
+}
+
+.block {
+    margin: 0 auto;
+    overflow-x: visible;
+    padding: 48px 0;
+    position: relative;
+}
+
+.block-body {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .block-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "body media";
+      grid-column-gap: 16px;
+
+      padding: 0 16px;
+  }
+  .block-body {
+    grid-area: body;
+  }
+  .block-media {
+    grid-area: media;
+  }
+  .c-block-container .c-block-body, .c-block-container .c-block-media {
+      float: none;
+      min-width: 0;
+      padding: 0;
+      width: auto;
+  }
+  .mzp-l-content {
+    padding: 24px 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .mzp-c-emphasis-box {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .title-xs {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.166;
+  }
+  .title-xxs {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.1;
+  }
+}
+
+h2 {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.166;
+    color: #20123a;
+    margin-bottom: 16px;
+}
+
+
+
+.mzp-l-content {
+    zoom: 1;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 256px;
+    padding: 24px;
+    position: relative;
+}
+
+.mzp-c-emphasis-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px 1px rgb(29 17 51 / 4%), 0 3px 16px 2px rgb(9 32 77 / 12%), 0 5px 10px -3px rgb(29 17 51 / 12%);
+    margin: 0 auto;
+    padding: 32px;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.c-trio {
+    zoom: 1;
+    margin: 0 auto;
+}
+
+.c-trio li {
+    margin-bottom: 64px;
+}
+
+.title-xs {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-family: Metropolis,Inter,X-LocaleSpecific,sans-serif;
+}
+
+.title-xxs {
+    font-style: italic;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-family: Metropolis,Inter,X-LocaleSpecific,sans-serif;
+}
+
+
+
+.leftstr, .rightstr {
+ float: left; /* Обтекание справа */
+ width: 50%; /* Ширина текстового блока */
+ font-style: italic;
+}
+.rightstr {
+ text-align: right; /* Выравнивание по правому краю */
+}
